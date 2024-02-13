@@ -1,0 +1,180 @@
+Complete the following steps using the command line:
+
+1. Open Terminal (Mac) or Git Bash (Windows).
+2. Check your current working directory.
+3. Navigate to your desktop.
+4. Confirm that your current working direcory is desktop.
+5. Create a folder called Pets.
+6. Navigate into the Pets folder.
+7. Inside Pets, create two folders: Dogs and Cats.
+8. Navigate into the Cats folder.
+9. Create a file named name.txt and insert the text My name is Lucky! Bark!. Then save the file.
+10. Read the file name.txt and output the results on the console.
+11. Navigate back to the root of the Pets folder.
+12. Copy the file name.txt into the Dogs folder.
+13. Delete the Cats folder and its contents.
+14. Rename the folder Dogs to Lucky.
+15. List the contents of the root of the Pets folder.
+
+
+
+Thomas@MSI MINGW64 ~
+$ pwd
+/c/Users/Thomas
+
+Thomas@MSI MINGW64 ~
+$ cd ~ Desktop
+bash: cd: too many arguments
+
+Thomas@MSI MINGW64 ~
+$ cd ~/Desktop
+
+Thomas@MSI MINGW64 ~/Desktop
+$ pwd
+/c/Users/Thomas/Desktop
+
+Thomas@MSI MINGW64 ~/Desktop
+$ dir
+Ad\ hoc\ Group\ Assignment\ in\ first\ class\ 2-12-2024.txt                    M1_Class_1_Activities\ (1).zip
+Compressed_Class_Requirements.zip                                              M1_Class_2_Activities.zip
+desktop.ini                                                                    M1_Class_3_Activities.zip
+GitHub\ Desktop.lnk                                                            Microsoft\ Edge.lnk
+Google\ Docs.lnk                                                               pets
+Google\ Sheets.lnk                                                             Slack.lnk
+Google\ Slides.lnk                                                             tkb.png
+Introduction\ to\ Machine\ Learning\ with\ Python\ (\ PDFDrive.com\ )-min.pdf  todo.txt
+
+Thomas@MSI MINGW64 ~/Desktop
+$ mkdir Pets
+
+Thomas@MSI MINGW64 ~/Desktop
+$ cd Pets
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ mkdir Dogs
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ mkdir Cats
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ cd Cats
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Cats
+$ notepad name.txt
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Cats
+$ cat Cats.txt
+cat: Cats.txt: No such file or directory
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Cats
+$ dir
+name.txt
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Cats
+$ ls
+name.txt
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Cats
+$ cat name.txt
+My name is Lucky! Bark!
+Thomas@MSI MINGW64 ~/Desktop/Pets/Cats
+$ cd ..
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ mv Pets/Cats/name.txt Pets/Dogs/name.txt
+mv: cannot stat 'Pets/Cats/name.txt': No such file or directory
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ pwd
+/c/Users/Thomas/Desktop/Pets
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ cp /Cats/name.txt /Dogs/name.txt
+cp: cannot stat '/Cats/name.txt': No such file or directory
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ cd Cats
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Cats
+$ ls
+name.txt
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Cats
+$ cp name.txt ../Dogs/name.txt
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Cats
+$ cd ..
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ cd Dogs
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Dogs
+$ ls
+name.txt
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Dogs
+$ cat name.txt
+My name is Lucky! Bark!
+Thomas@MSI MINGW64 ~/Desktop/Pets/Dogs
+$ cd ..
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ cd Cats
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Cats
+$ ls
+name.txt
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Cats
+$ del Cats
+bash: del: command not found
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Cats
+$ rm Cats
+rm: cannot remove 'Cats': No such file or directory
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Cats
+$ cd ..
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ dir
+Cats  Dogs
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ rm -r Cats
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ ls
+Dogs/
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ pwd
+/c/Users/Thomas/Desktop/Pets
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ dir
+Dogs
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ dir
+Dogs
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ mv Dogs Lucky
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ dir
+Lucky
+
+Thomas@MSI MINGW64 ~/Desktop/Pets
+$ cd Lucky
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Lucky
+$ dir
+name.txt
+
+Thomas@MSI MINGW64 ~/Desktop/Pets/Lucky
+$ cat name.txt
+My name is Lucky! Bark!
+Thomas@MSI MINGW64 ~/Desktop/Pets/Lucky
+$
